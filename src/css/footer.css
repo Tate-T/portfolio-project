@@ -1,0 +1,12 @@
+.footer__headline {
+    margin-right: auto;
+}
+
+.footer__links-list {
+    display: flex;
+    gap: 40px;
+}
+
+.footer__text {
+    
+}

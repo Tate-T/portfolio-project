@@ -1,0 +1,16 @@
+.face {
+    width: 108px;
+}
+
+.hero__text {
+    width: 592px;
+}
+
+.hero__links-list {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgrey;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}

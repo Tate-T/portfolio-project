@@ -12,5 +12,11 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+.green {
+  color: green;
+}
  
- 	
+.flex-box {
+  display: flex;
+}

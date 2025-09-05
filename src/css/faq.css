@@ -1,0 +1,18 @@
+.faq__headline {
+    width: 520px;
+}
+
+.faq__quetions-item {
+    background-color: lightgrey;
+    padding-left: 24px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.first-big-text {
+    width: 544px;
+}
+
+.second-big-text {
+    width: 488px;
+}
