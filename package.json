@@ -5,17 +5,20 @@
   "homepage": "https://markiianperliak.github.io/portfolio-project/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx parcel src/index.html",
-    "build": "parcel build src/index.html --no-cache --public-url /portfolio-project/",
+    "start": "npx parcel src/*.html",
+    "build": "parcel build src/*.html --no-cache --public-url /portfolio-project/",
     "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build",
-    "server": "npx json-server db.json"
+    "predeploy": "npm run build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "gh-pages": "^6.3.0",
     "node": "^22.19.0",
-    "parcel": "^2.15.4"
+    "parcel": "^2.15.4",
+    "posthtml-include": "^2.0.1"
+  },
+  "devDependencies": {
+    "parcel-reporter-clean-dist": "^1.0.4"
   }
 }
