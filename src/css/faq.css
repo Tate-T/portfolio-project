@@ -1,18 +1,68 @@
+.faq {
+    display: flex;
+    justify-content: space-between;
+}
+
 .faq__headline {
     width: 520px;
+    color: var(--Black, #292929);
+
+/* Desktop-Tablet/H2 */
+font-family: Impact;
+font-size: 108px;
+font-style: normal;
+font-weight: 400;
+line-height: 124px; /* 114.815% */
+letter-spacing: 1.8px;
+text-transform: uppercase;
 }
 
 .faq__quetions-item {
-    background-color: lightgrey;
-    padding-left: 24px;
-    padding-top: 28px;
-    padding-bottom: 28px;
+display: flex;
+padding: 28px 24px;
+justify-content: center;
+align-items: flex-start;
+gap: 24px;
+border-bottom: 1px solid var(--Light-grey, #E4E5E6);
 }
 
-.first-big-text {
-    width: 544px;
-}
-
-.second-big-text {
+.faq__quetion {
+    color: var(--Black, #292929);
     width: 488px;
+
+/* Desktop-Tablet/caption */
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 160% */
+letter-spacing: 0.5px;
+text-transform: uppercase;
+}
+
+.faq__arrow {
+    width: 24px;
+height: 24px;
+flex-shrink: 0;
+}
+
+.up {
+transform: rotate(180deg);
+}
+
+.faq__quetions-list {
+    padding-top: 276px
+}
+
+.faq__describtion-text {
+    color: var(--Black, #292929);
+
+/* Desktop-Tablet/body 1 */
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 24px; /* 150% */
+letter-spacing: 0.5px;
+width: 544px;
 }
