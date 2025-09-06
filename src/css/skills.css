@@ -1,3 +1,8 @@
 .skills__skills-image {
     width: max-content;
 }
+
+.skills {
+    display: flex;
+    justify-content: center;
+}

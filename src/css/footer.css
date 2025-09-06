@@ -17,6 +17,7 @@ text-transform: uppercase;
 
 .footer__links-list {
     display: flex;
+    align-items: center;
     gap: 40px;
 }
 
@@ -37,10 +38,11 @@ letter-spacing: 0.5px;
     color: var(--Black, #292929);
 
 /* Desktop-Tablet/body 1 */
-font-family: Poppins;
+font-family: "Poppins";
 font-size: 16px;
 font-style: normal;
 font-weight: 300;
 line-height: 24px; /* 150% */
 letter-spacing: 0.5px;
+text-align: right;
 }
