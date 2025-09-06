@@ -1,0 +1,31 @@
+.header{
+
+}
+
+.logo {
+    width: 233;
+height: 32;
+opacity: 1;
+font-family: Impact;
+font-weight: 400;
+font-style: Regular;
+font-size: 32px;
+leading-trim: NONE;
+line-height: 32px;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+
+}
+.header__item{
+    width: 82;
+height: 24;
+
+opacity: 1;
+font-family: Poppins;
+font-weight: 300;
+font-style: Light;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.5px;
+
+}
