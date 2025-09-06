@@ -1,0 +1,46 @@
+.footer {
+    padding-bottom: 24px;
+    padding-top: 40px;
+}
+
+.footer__headline {
+    margin-right: auto;
+    color: var(--Black, #292929);
+font-family: Impact;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 100% */
+letter-spacing: 1.5px;
+text-transform: uppercase;
+}
+
+.footer__links-list {
+    display: flex;
+    gap: 40px;
+}
+
+.hero__link {
+    color: var(--Black, #292929);
+
+/* Desktop-Tablet/body 1 */
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 24px; /* 150% */
+letter-spacing: 0.5px;
+}
+
+.footer__text {
+    margin-top: 40px;
+    color: var(--Black, #292929);
+
+/* Desktop-Tablet/body 1 */
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 24px; /* 150% */
+letter-spacing: 0.5px;
+}
