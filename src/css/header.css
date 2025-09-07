@@ -1,13 +1,26 @@
-.header{
-
+/* Хедер — фон і лінія як на макеті */
+.header {
+  background: #fff;
+  border-bottom: 2px solid #00aaff;
+  padding: 20px 0;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.logo {
-    width: 233;
-height: 32;
-opacity: 1;
-font-family: Impact;
-font-weight: 400;
+/* Ключ: флекс на контейнері, бо він містить логотип і меню */
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Логотип */
+.header-logo {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: #000;
+  font-family: Impact;
+
 font-style: Regular;
 font-size: 32px;
 leading-trim: NONE;
@@ -16,16 +29,31 @@ letter-spacing: 1.5px;
 text-transform: uppercase;
 
 }
-.header__item{
-    width: 82;
-height: 24;
 
-opacity: 1;
+.header-logo .green {
+  color: #2bb673; /* або твій зелений */
+}
+
+/* Навігація — в один ряд */
+.header__list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;          /* прибираємо стандартні відступи ul */
+  padding: 0;
+}
+
+.header__item {
 font-family: Poppins;
 font-weight: 300;
 font-style: Light;
 font-size: 16px;
 line-height: 24px;
 letter-spacing: 0.5px;
-
 }
+
+.header__item:hover {
+  color: #00aaff;
+}
+
+
