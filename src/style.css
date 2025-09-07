@@ -10,7 +10,7 @@
 @import url("./css/footer.css");
 @import url("./css/modal.css");
 body {
-  font-family: Arial, sans-serif;
+  font-family: "impact";
 }
 
 .container {
@@ -35,4 +35,5 @@ a {
  
 .flex-box {
   display: flex;
+  align-items: center;
 }

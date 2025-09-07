@@ -48,6 +48,7 @@ border-radius: 16px;
 background: var(--Light-accent, #BCDFD1);
 position: absolute;
 right: -160px;
+z-index: -5;
 
 }
 
@@ -62,6 +63,14 @@ font-weight: 400;
 line-height: 32px; /* 160% */
 letter-spacing: 0.5px;
 text-transform: uppercase;
+}
+
+.arrow__right {
+    width: 28px;
+stroke-width: 2px;
+stroke: var(--Accet-green, #00B068);
+fill: var(--Accet-green, #00B068);
+margin-right: 12px;
 }
 
 .hero__links-list {
@@ -98,11 +107,11 @@ text-transform: uppercase;
 
 .hero__order-button {
     color: var(--Black, #292929);
-
+display: flex;
+align-items: center;
 /* Desktop-Tablet/caption */
 font-family: Poppins;
 font-size: 20px;
-font-style: normal;
 font-weight: 400;
 line-height: 32px; /* 160% */
 letter-spacing: 0.5px;
@@ -110,4 +119,6 @@ text-transform: uppercase;
 background-color: transparent;
 border: none;
 z-index: 2;
+cursor: pointer;
+position: relative;
 }
