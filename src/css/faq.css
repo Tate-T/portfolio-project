@@ -6,7 +6,7 @@
 .faq__headline {
     width: 520px;
     color: var(--Black, #292929);
-
+margin-right: 104px;
 /* Desktop-Tablet/H2 */
 font-family: Impact;
 font-size: 108px;
@@ -51,7 +51,7 @@ transform: rotate(180deg);
 }
 
 .faq__quetions-list {
-    padding-top: 276px
+    padding-top: 300px;
 }
 
 .faq__describtion-text {
@@ -65,4 +65,8 @@ font-weight: 300;
 line-height: 24px; /* 150% */
 letter-spacing: 0.5px;
 width: 544px;
+}
+
+.faq-conatiner {
+    display: flex;
 }
