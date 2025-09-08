@@ -110,6 +110,11 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 150% */
 letter-spacing: 0.5px;
+transition: color 0.5s ease;
+}
+
+.load-more-projects:hover {
+    color: var(--Accet-green, #00B068);
 }
 
 .visit__link {

@@ -21,7 +21,7 @@ text-transform: uppercase;
     gap: 40px;
 }
 
-.hero__link {
+.footer__link {
     color: var(--Black, #292929);
 
 /* Desktop-Tablet/body 1 */
@@ -31,6 +31,11 @@ font-style: normal;
 font-weight: 300;
 line-height: 24px; /* 150% */
 letter-spacing: 0.5px;
+transition: color 0.5s ease;
+}
+
+.footer__link:hover {
+color: var(--Accet-green, #00B068);
 }
 
 .footer__text {
