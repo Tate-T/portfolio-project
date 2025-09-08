@@ -7,7 +7,7 @@ export function displayProjects(projects) {
          <li class="projects__project-item">
      <img src="${project.image}" alt="Project Photo" class="project__photo">
      <p class="project__programming-language">${project.languages}</p>
-     <div class="flex-box project-data">
+     <div class="project-data">
  <p class="project__name">${project.name}</p>
      <a class="visit__link" target="__blank" href="${project.link}"><button type="button" class="project__visit-button">Visit<svg class="project__arrow"><use href="#icon-arrow-up"></use></svg></button></a>
      </div>

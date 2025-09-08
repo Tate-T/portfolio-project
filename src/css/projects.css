@@ -1,7 +1,7 @@
 .project__programming-language {
 color: var(--Black, #292929);
 margin-top: 16px;
-margin-bottom: 20px;
+
 
 /* Desktop-Tablet/body 1 */
 font-family: Poppins;
@@ -10,6 +10,19 @@ font-style: normal;
 font-weight: 300;
 line-height: 24px; /* 150% */
 letter-spacing: 0.5px;
+
+@media screen and (min-width: 360px) {
+        margin-bottom: 16px;
+    }
+
+
+    @media screen and (min-width: 768px) {
+margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        
+    }
 }
 
 .projects__headline {
@@ -25,6 +38,19 @@ font-weight: 400;
 line-height: 124px; /* 114.815% */
 letter-spacing: 1.8px;
 text-transform: uppercase;
+
+@media screen and (min-width: 360px) {
+        font-size: 52px;
+    }
+
+
+    @media screen and (min-width: 768px) {
+font-size: 108px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        
+    }
 }
 
 .project__name {
@@ -39,6 +65,20 @@ font-weight: 500;
 line-height: 48px; /* 133.333% */
 letter-spacing: 0.5px;
 text-transform: uppercase;
+
+@media screen and (min-width: 360px) {
+        width: 320px;
+    }
+
+
+    @media screen and (min-width: 768px) {
+        width: auto;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: auto;
+    }
+
 }
 
 .project__visit-button {
@@ -60,6 +100,19 @@ letter-spacing: 0.5px;
 text-transform: uppercase;
 cursor: pointer;
 height: min-content;
+
+@media screen and (min-width: 360px) {
+        margin-left: auto;
+    }
+
+
+    @media screen and (min-width: 768px) {
+        margin-left: 0px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-left: 0px;
+    }
 }
 
 .project__visit-link {
@@ -88,7 +141,21 @@ height: min-content;
 }
 
 .project-data {
-    margin-bottom: 80px;
+display: block;
+    @media screen and (min-width: 360px) {
+            margin-bottom: 40px;
+    }
+
+
+    @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+        display: flex;
+    align-items: center;
+    }
+
+    @media screen and (min-width: 1280px) {
+            margin-bottom: 80px;
+    }
 }
 
 .load-more-projects {
@@ -111,6 +178,7 @@ font-weight: 500;
 line-height: 24px; /* 150% */
 letter-spacing: 0.5px;
 transition: color 0.5s ease;
+
 }
 
 .load-more-projects:hover {
@@ -137,3 +205,18 @@ stroke: var(--Accet-green, #00B068);
     display: none;
 }
 
+.project__photo {
+    @media screen and (min-width: 360px) {
+        width: 320px;
+    }
+
+
+    @media screen and (min-width: 768px) {
+    width: 704px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1008px;
+    }
+
+}
