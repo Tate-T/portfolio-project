@@ -1,8 +1,24 @@
-.skills__skills-image {
-    width: max-content;
-}
-
 .skills {
     display: flex;
     justify-content: center;
+    position: relative;
+    
+
+    @media screen and (min-width: 360px) {
+      height: 244px;  
+    }
+
+
+    @media screen and (min-width: 768px) {
+height: 280px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        height: 280px;
+    }
+}
+
+.skills__skills-image {
+    position: absolute;
+    width: max-content;
 }
