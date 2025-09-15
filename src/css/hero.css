@@ -79,7 +79,7 @@ color: var(--Accet-green, #00B068);
 }
 
 .hero__flex-box-center {
-
+    position: relative;
 
     @media screen and (min-width: 360px) {
         margin-bottom: 72px;
@@ -223,4 +223,16 @@ margin-bottom: 40px;
     @media screen and (min-width: 1280px) {
         margin-bottom: 0px;
     }
+}
+
+.hero__up-decor {
+    position: absolute;
+    right: 350px;
+    top: 130px;
+}
+
+.hero__down-decor {
+    position: absolute;
+    left: 150px;
+    top: -85px;
 }
