@@ -57,3 +57,53 @@ letter-spacing: 0.5px;
 }
 
 
+/* Бургер-кнопка */
+.header__burger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header__burger span {
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+}
+
+/* Адаптив до 760px */
+@media (max-width: 760px) {
+  .header > .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .header__burger {
+    display: flex;
+  }
+
+  .header__list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #00aaff;
+    border-radius: 8px;
+    display: none;
+    z-index: 100;
+  }
+
+  .header__list.active {
+    display: flex;
+  }
+}
+
+
