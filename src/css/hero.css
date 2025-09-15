@@ -141,8 +141,6 @@ text-transform: uppercase;
 
 .arrow__right {
     width: 28px;
-stroke-width: 2px;
-stroke: var(--Accet-green, #00B068);
 fill: var(--Accet-green, #00B068);
 margin-right: 12px;
 }
