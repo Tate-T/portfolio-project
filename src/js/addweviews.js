@@ -4,7 +4,7 @@
   const overlay = document.querySelector('.modal__overlay');
 
   form.addEventListener('submit', function(e) {
-    e.preventDefault(); // зупиняємо відправку форми
+    e.preventDefault();
     modal.classList.add('active');
   });
 
