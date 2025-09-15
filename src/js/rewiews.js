@@ -68,58 +68,70 @@
 //   document.addEventListener('DOMContentLoaded', loadReviews);
 
 
+const rewiewsList = document.querySelector('.rewiews__list');
+const showSliderBtn = document.querySelector('.rewiews__button'); // кнопка вперед
+const backBtn = document.querySelector('.rewiews__button--prev'); // кнопка назад
 
+let allReviews = []; // зберігаємо всі відгуки
 
-  const rewiewsList = document.querySelector('.rewiews__list');
-  const showSliderBtn = document.querySelector('.rewiews__button');
+async function loadReviews() {
+  try {
+    const response = await fetch('https://68bdb06e227c48698f8525a8.mockapi.io/portfolio/comments');
+    if (!response.ok) throw new Error('Failed to fetch');
 
-  async function loadReviews() {
-    try {
-      const response = await fetch('https://68bdb06e227c48698f8525a8.mockapi.io/portfolio/comments');
-      if (!response.ok) throw new Error('Failed to fetch');
-
-      const data = await response.json();
-      rewiewsList.innerHTML = '';
-
-      // Спочатку показуємо тільки два
-      data.slice(0, 2).forEach(review => {
-        const li = document.createElement('li');
-        li.classList.add('rewiews__item');
-        li.innerHTML = `
-          <p class="rewiews__text">${review.comment}</p>
-          <div class="rewiews__box">
-            <img class="rewiews__img" src="${review.avatar}" alt="${review.name}">
-            <p class="rewiews__name">${review.name}</p>
-          </div>
-        `;
-        rewiewsList.appendChild(li);
-      });
-
-      // Зберігаємо всі для слайдера
-      showSliderBtn.addEventListener('click', () => {
-        rewiewsList.classList.add('slider');
-        rewiewsList.innerHTML = ''; // очищаємо
-
-        data.forEach(review => {
-          const li = document.createElement('li');
-          li.classList.add('rewiews__item');
-          li.innerHTML = `
-            <p class="rewiews__text">${review.comment}</p>
-            <div class="rewiews__box">
-              <img class="rewiews__img" src="${review.avatar}" alt="${review.name}">
-              <p class="rewiews__name">${review.name}</p>
-            </div>
-          `;
-          rewiewsList.appendChild(li);
-        });
-
-        showSliderBtn.style.display = 'none'; // ховаємо кнопку
-      });
-    } catch (error) {
-      console.error('Error loading reviews:', error);
-      rewiewsList.innerHTML = '<li class="rewiews__item">Not found</li>';
-    }
+    allReviews = await response.json();
+    renderInitialReviews();
+  } catch (error) {
+    console.error('Error loading reviews:', error);
+    rewiewsList.innerHTML = '<li class="rewiews__item">Not found</li>';
   }
+}
 
-  document.addEventListener('DOMContentLoaded', loadReviews);
+function renderInitialReviews() {
+  rewiewsList.classList.remove('slider');
+  rewiewsList.innerHTML = '';
+
+  allReviews.slice(0, 2).forEach(review => {
+    const li = document.createElement('li');
+    li.classList.add('rewiews__item');
+    li.innerHTML = `
+      <p class="rewiews__text">${review.comment}</p>
+      <div class="rewiews__box">
+        <img class="rewiews__img" src="${review.avatar}" alt="${review.name}">
+        <p class="rewiews__name">${review.name}</p>
+      </div>
+    `;
+    rewiewsList.appendChild(li);
+  });
+
+  showSliderBtn.style.display = 'block';
+  backBtn.style.display = 'none';
+}
+
+function renderSliderReviews() {
+  rewiewsList.classList.add('slider');
+  rewiewsList.innerHTML = '';
+
+  allReviews.forEach(review => {
+    const li = document.createElement('li');
+    li.classList.add('rewiews__item');
+    li.innerHTML = `
+      <p class="rewiews__text">${review.comment}</p>
+      <div class="rewiews__box">
+        <img class="rewiews__img" src="${review.avatar}" alt="${review.name}">
+        <p class="rewiews__name">${review.name}</p>
+      </div>
+    `;
+    rewiewsList.appendChild(li);
+  });
+
+  showSliderBtn.style.display = 'none';
+  backBtn.style.display = 'block';
+}
+
+showSliderBtn.addEventListener('click', renderSliderReviews);
+backBtn.addEventListener('click', renderInitialReviews);
+
+document.addEventListener('DOMContentLoaded', loadReviews);
+
 
