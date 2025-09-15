@@ -1,0 +1,2 @@
+const e=document.querySelector(".addrewiews__form"),t=document.getElementById("cooperationModal"),c=document.querySelector(".modal__close"),o=document.querySelector(".modal__overlay");e.addEventListener("submit",function(e){e.preventDefault(),t.classList.add("active")}),c.addEventListener("click",()=>{t.classList.remove("active")}),o.addEventListener("click",()=>{t.classList.remove("active")});
+//# sourceMappingURL=portfolio-project.37b8c3be.js.map
