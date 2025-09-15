@@ -208,6 +208,8 @@ line-height: 24px;
 letter-spacing: 0.5px;
 
 }
+
+
 @media (max-width: 600px) {
   .aboutme {
     padding: 32px 16px;
@@ -225,11 +227,17 @@ letter-spacing: 0.5px;
     line-height: 72px;
     letter-spacing: 1.2px;
     text-align: left;
-    margin-bottom: 16px;
+    margin: 0;
+  }
+
+  .aboutme__maintitle::after {
+    content: ' ME';
+    color: #2bb673;
   }
 
   .aboutme__tittle {
     font-size: 20px;
+    font-weight: 600;
     margin: 0;
     text-align: left;
   }
@@ -238,7 +246,7 @@ letter-spacing: 0.5px;
   .aboutme__texttwo {
     font-size: 16px;
     line-height: 1.6;
-    margin: 0 0 16px 0;
+    margin: 0;
     text-align: left;
   }
 
@@ -250,7 +258,8 @@ letter-spacing: 0.5px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin: 0 auto;
-    position: static;
+   
+    bottom: 100px;
     transform: none;
   }
 
@@ -264,19 +273,19 @@ letter-spacing: 0.5px;
   }
 
   .aboutme__item {
-    width: 100%;
-    position: static;
-    transform: none;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    position: static;
+    transform: none;
   }
 
   .aboutme__minitittle {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: 8px;
   }
 
   .aboutme__text {
@@ -285,4 +294,7 @@ letter-spacing: 0.5px;
     margin: 0;
   }
 }
+
+
+
 
