@@ -1,7 +1,7 @@
-  const form = document.querySelector('.addrewiews__form');
-  const modal = document.getElementById('cooperationModal');
-  const closeBtn = document.querySelector('.modal__close');
-  const overlay = document.querySelector('.modal__overlay');
+  // const form = document.querySelector('.addrewiews__form');
+  // const modal = document.getElementById('cooperationModal');
+  // const closeBtn = document.querySelector('.modal__close');
+  // const overlay = document.querySelector('.modal__overlay');
 
   form.addEventListener('submit', function(e) {
     e.preventDefault(); // зупиняємо відправку форми
@@ -15,3 +15,6 @@
   overlay.addEventListener('click', () => {
     modal.classList.remove('active');
   });
+
+
+
