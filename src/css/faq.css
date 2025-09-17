@@ -182,3 +182,21 @@ transition: transform 0.3s ease;
     border-radius: 16px;
 background: var(--Light-accent, #BCDFD1);
 }
+
+.faq__decor {
+    width: 526px;
+    margin-top: 240px;
+
+      @media screen and (min-width: 360px) {
+          display: none;
+    }
+
+
+    @media screen and (min-width: 768px) {
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        display: inline;
+    }
+}
