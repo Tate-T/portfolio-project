@@ -79,7 +79,7 @@ color: var(--Accet-green, #00B068);
 }
 
 .hero__flex-box-center {
-
+    position: relative;
 
     @media screen and (min-width: 360px) {
         margin-bottom: 72px;
@@ -208,6 +208,8 @@ border: none;
 z-index: 2;
 cursor: pointer;
 position: relative;
+margin-left: auto;
+
 
 @media screen and (min-width: 360px) {
         margin-bottom: 40px;
@@ -216,9 +218,58 @@ position: relative;
 
     @media screen and (min-width: 768px) {
 margin-bottom: 40px;
+margin-left: 0px;
     }
 
     @media screen and (min-width: 1280px) {
         margin-bottom: 0px;
+    }
+}
+
+.hero__up-decor {
+    
+    position: absolute;
+
+
+    @media screen and (min-width: 360px) {
+        width: 351px;
+        top: 150px;
+    right: -280px;
+    }
+
+
+    @media screen and (min-width: 768px) {
+width: 356px;
+top: 230px;
+        right: 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+            right: 350px;
+    top: 130px;
+    }
+}
+
+.hero__down-decor {
+    position: absolute;
+
+
+    @media screen and (min-width: 360px) {
+        width: 169px;
+            top: 70px;
+    left: 250px;
+    }
+
+
+    @media screen and (min-width: 768px) {
+width: 356px;
+        top: -93px;
+        left: 170px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 356px;
+            left: 150px;
+    top: -85px;
     }
 }
