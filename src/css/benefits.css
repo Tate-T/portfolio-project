@@ -157,7 +157,7 @@ border-radius: 8px;
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .benefits {
     padding: 40px 16px;
   }
