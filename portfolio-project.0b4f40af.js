@@ -1,2 +1,0 @@
-let form=document.querySelector(".addrewiews__form"),modal=document.getElementById("cooperationModal"),closeBtn=document.querySelector(".modal__close"),overlay=document.querySelector(".modal__overlay");form.addEventListener("submit",function(e){e.preventDefault(),modal.classList.add("active")}),closeBtn.addEventListener("click",()=>{modal.classList.remove("active")}),overlay.addEventListener("click",()=>{modal.classList.remove("active")});
-//# sourceMappingURL=portfolio-project.0b4f40af.js.map
