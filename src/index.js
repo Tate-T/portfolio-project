@@ -1,3 +1,7 @@
+import "./js/addweviews.js";
+import "./js/header.js";
+import "./js/rewiews.js";
+import "./js/addweviews.js";
 import { getProjects, displayProjects } from "./js/projects.js";
 const thelist = document.querySelector(".projects__project-list")
 const button = document.querySelector(".load-more-projects")
